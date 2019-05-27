@@ -15,3 +15,8 @@ Please follow the data science process, and comment on how you have followed it.
 ## Estimate your usage
 
 To calculate the pricing of your run use the provided [Google Calculator](https://cloud.google.com/products/calculator/). You want to choose the DataProc product and to include the GCE charges in your cost estimations
+
+
+## Running pyspark in jupyter on Windows
+
+[How to Install and Run PySpark in Jupyter Notebook on Windows](https://changhsinlee.com/install-pyspark-windows-jupyter/)
