@@ -23,4 +23,17 @@ To calculate the pricing of your run use the provided [Google Calculator](https:
 
 ## Running pyspark on google cloud
 
+Setup a cluster with scipy:
+```
+gcloud dataproc clusters create my-cluster \
+    --metadata 'PIP_PACKAGES=scipy' \
+    --initialization-actions \
+    gs://dataproc-initialization-actions/python/pip-install.sh
+```
+You can also click the advanced options in the GCE dataproc GUI and add `gs://dataproc-initialization-actions/python/pip-install.sh` in the field **Initialization actions**, then under **Metadata**, add `PIP_PACKAGES` in the field **Key** and `scipy` int the field **Value**.
+
 [Submit a pyspark job to the cluster.](https://cloud.google.com/sdk/gcloud/reference/dataproc/jobs/submit/pyspark)
+
+```
+gcloud dataproc jobs submit pyspark LinalgTest.py --cluster=cluster-6b08 --region=europe-north1 --files=rw136.mtx
+```
