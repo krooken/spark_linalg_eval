@@ -24,4 +24,19 @@ rowmatrix.computePrincipalComponents(3)
 
 end = time.time()
 delta = end-start
-print delta
+print "PCA(3) took: ", delta, " seconds."
+
+start = time.time()
+
+for row in range(rows):
+    data_row = mat.getrow(row)
+    data_rows = data_rows + [pyspark.mllib.linalg.Vectors.sparse(cols, zip(data_row.indices, data_row.data))]
+rdd_rows = sc.parallelize(data_rows)
+rowmatrix = pyspark.mllib.linalg.distributed.RowMatrix(rdd_rows)
+rowmatrix.computeCovariance()
+
+end = time.time()
+delta = end-start
+print "Cov took: ", delta, " seconds."
+
+
