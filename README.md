@@ -12,6 +12,26 @@ You will write a report where you will explain your choice of the methods, and t
 
 Please follow the data science process, and comment on how you have followed it.
 
+## Experiment setup
+
+Try with two different matrices, 1 with 130 rows and 1 wioth 300 rows.
+
+Experiments (low memory, 3.75 GB):
+
+| Cluster setup           |  1 node (1,0) | 3 nodes (1,2) | 5 nodes (1,4) |
+|----------------|---------------|---------------|---------------|
+| PCA            |               |               |               |
+| Covariance     |               |               |               |
+| SVD            |               |               |               |
+
+Experiments (high memory, 8 GB):
+
+| Cluster setup               |  1 node (1,0) | 3 nodes (1,2) | 5 nodes (1,4) |
+|----------------|---------------|---------------|---------------|
+| PCA            |               |               |               |
+| Covariance     |               |               |               |
+| SVD            |               |               |               |
+
 ## Estimate your usage
 
 To calculate the pricing of your run use the provided [Google Calculator](https://cloud.google.com/products/calculator/). You want to choose the DataProc product and to include the GCE charges in your cost estimations
