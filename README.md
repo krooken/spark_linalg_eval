@@ -20,3 +20,7 @@ To calculate the pricing of your run use the provided [Google Calculator](https:
 ## Running pyspark in jupyter on Windows
 
 [How to Install and Run PySpark in Jupyter Notebook on Windows](https://changhsinlee.com/install-pyspark-windows-jupyter/)
+
+## Running pyspark on google cloud
+
+[Submit a pyspark job to the cluster.](https://cloud.google.com/sdk/gcloud/reference/dataproc/jobs/submit/pyspark)
