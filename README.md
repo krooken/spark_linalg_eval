@@ -12,6 +12,26 @@ You will write a report where you will explain your choice of the methods, and t
 
 Please follow the data science process, and comment on how you have followed it.
 
+## Experiment setup
+
+Try with two different matrices, 1 with 130 rows and 1 wioth 300 rows.
+
+Experiments (low memory, 3.75 GB):
+
+| Cluster setup           |  1 node (1,0) | 3 nodes (1,2) | 5 nodes (1,4) |
+|----------------|---------------|---------------|---------------|
+| PCA            |               |               |               |
+| Covariance     |               |               |               |
+| SVD            |               |               |               |
+
+Experiments (high memory, 8 GB):
+
+| Cluster setup               |  1 node (1,0) | 3 nodes (1,2) | 5 nodes (1,4) |
+|----------------|---------------|---------------|---------------|
+| PCA            |               |               |               |
+| Covariance     |               |               |               |
+| SVD            |               |               |               |
+
 ## Estimate your usage
 
 To calculate the pricing of your run use the provided [Google Calculator](https://cloud.google.com/products/calculator/). You want to choose the DataProc product and to include the GCE charges in your cost estimations
@@ -23,4 +43,17 @@ To calculate the pricing of your run use the provided [Google Calculator](https:
 
 ## Running pyspark on google cloud
 
+Setup a cluster with scipy:
+```
+gcloud dataproc clusters create my-cluster \
+    --metadata 'PIP_PACKAGES=scipy' \
+    --initialization-actions \
+    gs://dataproc-initialization-actions/python/pip-install.sh
+```
+You can also click the advanced options in the GCE dataproc GUI and add `gs://dataproc-initialization-actions/python/pip-install.sh` in the field **Initialization actions**, then under **Metadata**, add `PIP_PACKAGES` in the field **Key** and `scipy` int the field **Value**.
+
 [Submit a pyspark job to the cluster.](https://cloud.google.com/sdk/gcloud/reference/dataproc/jobs/submit/pyspark)
+
+```
+gcloud dataproc jobs submit pyspark LinalgTest.py --cluster=cluster-6b08 --region=europe-north1 --files=rw136.mtx
+```
