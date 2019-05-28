@@ -7,7 +7,7 @@ import numpy as np
 import time
 
 mat = scipy.io.mmread('rw136.mtx')
-mat2 = scipy.io.mmread('dw_361.mtx')
+mat2 = scipy.io.mmread('dwt_361.mtx')
 
 sc = pyspark.context.SparkContext.getOrCreate()
 
