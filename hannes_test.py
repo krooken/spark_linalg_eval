@@ -7,7 +7,7 @@ import numpy as np
 import time
 
 mat = scipy.io.mmread('rw136.mtx')
-mat2 = scipy.io.mmread('rw136.mtx')
+mat2 = scipy.io.mmread('dw_361.mtx')
 
 sc = pyspark.context.SparkContext.getOrCreate()
 
@@ -67,7 +67,7 @@ rowmatrix.computePrincipalComponents(3)
 
 end = time.time()
 delta = end-start
-print "PCA(3)  took: ", delta, " seconds, for matrix: rw136".
+print "PCA(3)  took: ", delta, " seconds, for matrix: dwa_361".
 
 start = time.time()
 
@@ -80,7 +80,7 @@ rowmatrix.computeCovariance()
 
 end = time.time()
 delta = end-start
-print "Cov  took: ", delta, " seconds, for matrix: rw136".
+print "Cov  took: ", delta, " seconds, for matrix: dwa_361".
 
 start = time.time()
 
@@ -93,4 +93,4 @@ rowmatrix.computeSVD(3)
 
 end = time.time()
 delta = end-start
-print "SVD(3)  took: ", delta, " seconds, for matrix: rw136".
+print "SVD(3)  took: ", delta, " seconds, for matrix: dwa_361".
