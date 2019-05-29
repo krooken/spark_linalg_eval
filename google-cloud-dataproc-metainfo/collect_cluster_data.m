@@ -100,9 +100,11 @@ collected_data.SVD_high_mem_dwt_361 = [...
 
 datafields = fieldnames(collected_data);
 avg_data = collected_data;
+median_data = collected_data;
 latexstrings = '';
 for i = 1:numel(datafields)
     avg_data.(datafields{i}) = mean(collected_data.(datafields{i}));
+    median_data.(datafields{i}) = median(collected_data.(datafields{i}));
     latexstring = '';
     for j = 1:length(avg_data.(datafields{i}))
         latexstring = [latexstring ' & ' sprintf('%.2f',avg_data.(datafields{i})(j))]; %#ok<AGROW>
