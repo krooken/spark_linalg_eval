@@ -1,0 +1,10 @@
+filecontents = fileread('cluster-node1-mem3-75-m\1ff2ffdf63334673a6e5e5a5cba3d03c\driveroutput.000000000');
+
+expr = '(PCA\(3\)|Cov|SVD\(3\))\W*took:\W*(\d*\W?\d*)\W*seconds, for matrix: (\w*).';
+
+out1 = regexp(filecontents, expr, 'tokens');
+
+keyvalues = cell(numel(out1),2);
+
+for i = 1:numel(out1)
+    keyvalues{i,1}
