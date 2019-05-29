@@ -1,0 +1,58 @@
+19/05/28 18:05:58 INFO org.spark_project.jetty.util.log: Logging initialized @8263ms
+19/05/28 18:05:58 INFO org.spark_project.jetty.server.Server: jetty-9.3.z-SNAPSHOT, build timestamp: unknown, git hash: unknown
+19/05/28 18:05:58 INFO org.spark_project.jetty.server.Server: Started @8488ms
+19/05/28 18:05:58 INFO org.spark_project.jetty.server.AbstractConnector: Started ServerConnector@45eb6bd{HTTP/1.1,[http/1.1]}{0.0.0.0:4040}
+19/05/28 18:05:59 WARN org.apache.spark.scheduler.FairSchedulableBuilder: Fair Scheduler configuration file not found so jobs will be scheduled in FIFO order. To use fair scheduling, configure pools in fairscheduler.xml or set spark.scheduler.allocation.file to a file that contains the configuration.
+19/05/28 18:06:01 INFO org.apache.hadoop.yarn.client.RMProxy: Connecting to ResourceManager at cluster-node4-mem3-75-m/10.166.0.18:8032
+19/05/28 18:06:01 INFO org.apache.hadoop.yarn.client.AHSProxy: Connecting to Application History server at cluster-node4-mem3-75-m/10.166.0.18:10200
+19/05/28 18:06:04 WARN org.apache.hadoop.hdfs.DataStreamer: Caught exception
+java.lang.InterruptedException
+	at java.lang.Object.wait(Native Method)
+	at java.lang.Thread.join(Thread.java:1252)
+	at java.lang.Thread.join(Thread.java:1326)
+	at org.apache.hadoop.hdfs.DataStreamer.closeResponder(DataStreamer.java:980)
+	at org.apache.hadoop.hdfs.DataStreamer.endBlock(DataStreamer.java:630)
+	at org.apache.hadoop.hdfs.DataStreamer.run(DataStreamer.java:807)
+19/05/28 18:06:06 INFO org.apache.hadoop.yarn.client.api.impl.YarnClientImpl: Submitted application application_1559057102467_0004
+19/05/28 18:06:23 INFO com.github.fommil.jni.JniLoader: successfully loaded /tmp/jniloader43306847554071083netlib-native_system-linux-x86_64.so
+PCA(3)  took:  9.93662190437  seconds, for matrix: rw136.
+Cov took:  1.01019001007  seconds, for matrix: rw136.
+19/05/28 18:06:25 WARN org.apache.spark.mllib.linalg.distributed.RowMatrix: The input data is not directly cached, which may hurt performance if its parent RDDs are also uncached.
+19/05/28 18:06:25 INFO com.github.fommil.jni.JniLoader: already loaded netlib-native_system-linux-x86_64.so
+19/05/28 18:06:34 WARN org.apache.spark.util.AccumulatorContext: Attempted to access garbage collected accumulator 1251
+19/05/28 18:06:34 WARN org.apache.spark.util.AccumulatorContext: Attempted to access garbage collected accumulator 1252
+19/05/28 18:06:34 WARN org.apache.spark.util.AccumulatorContext: Attempted to access garbage collected accumulator 1252
+19/05/28 18:06:34 WARN org.apache.spark.util.AccumulatorContext: Attempted to access garbage collected accumulator 1253
+19/05/28 18:06:34 WARN org.apache.spark.util.AccumulatorContext: Attempted to access garbage collected accumulator 1253
+19/05/28 18:06:34 WARN org.apache.spark.util.AccumulatorContext: Attempted to access garbage collected accumulator 1254
+19/05/28 18:06:34 WARN org.apache.spark.util.AccumulatorContext: Attempted to access garbage collected accumulator 1254
+19/05/28 18:06:34 WARN org.apache.spark.util.AccumulatorContext: Attempted to access garbage collected accumulator 1256
+19/05/28 18:06:34 WARN org.apache.spark.util.AccumulatorContext: Attempted to access garbage collected accumulator 1256
+19/05/28 18:06:34 WARN org.apache.spark.util.AccumulatorContext: Attempted to access garbage collected accumulator 1259
+19/05/28 18:06:34 WARN org.apache.spark.util.AccumulatorContext: Attempted to access garbage collected accumulator 1259
+19/05/28 18:06:34 WARN org.apache.spark.util.AccumulatorContext: Attempted to access garbage collected accumulator 1261
+19/05/28 18:06:34 WARN org.apache.spark.util.AccumulatorContext: Attempted to access garbage collected accumulator 1261
+19/05/28 18:06:34 WARN org.apache.spark.util.AccumulatorContext: Attempted to access garbage collected accumulator 1263
+19/05/28 18:06:34 WARN org.apache.spark.util.AccumulatorContext: Attempted to access garbage collected accumulator 1263
+19/05/28 18:06:34 WARN org.apache.spark.util.AccumulatorContext: Attempted to access garbage collected accumulator 1264
+19/05/28 18:06:34 WARN org.apache.spark.util.AccumulatorContext: Attempted to access garbage collected accumulator 1264
+19/05/28 18:06:34 WARN org.apache.spark.util.AccumulatorContext: Attempted to access garbage collected accumulator 1267
+19/05/28 18:06:34 WARN org.apache.spark.util.AccumulatorContext: Attempted to access garbage collected accumulator 1267
+19/05/28 18:06:34 WARN org.apache.spark.util.AccumulatorContext: Attempted to access garbage collected accumulator 1268
+19/05/28 18:06:34 WARN org.apache.spark.util.AccumulatorContext: Attempted to access garbage collected accumulator 1268
+19/05/28 18:06:34 WARN org.apache.spark.util.AccumulatorContext: Attempted to access garbage collected accumulator 1269
+19/05/28 18:06:34 WARN org.apache.spark.util.AccumulatorContext: Attempted to access garbage collected accumulator 1269
+19/05/28 18:06:34 WARN org.apache.spark.util.AccumulatorContext: Attempted to access garbage collected accumulator 1270
+19/05/28 18:06:34 WARN org.apache.spark.util.AccumulatorContext: Attempted to access garbage collected accumulator 1270
+19/05/28 18:06:34 WARN org.apache.spark.util.AccumulatorContext: Attempted to access garbage collected accumulator 1271
+19/05/28 18:06:34 WARN org.apache.spark.util.AccumulatorContext: Attempted to access garbage collected accumulator 1271
+19/05/28 18:06:34 WARN org.apache.spark.util.AccumulatorContext: Attempted to access garbage collected accumulator 1275
+19/05/28 18:06:34 WARN org.apache.spark.util.AccumulatorContext: Attempted to access garbage collected accumulator 1275
+19/05/28 18:06:38 WARN org.apache.spark.mllib.linalg.distributed.RowMatrix: The input data was not directly cached, which may hurt performance if its parent RDDs are also uncached.
+SVD(3) took:  13.4971621037  seconds, for matrix: rw136.
+PCA(3)  took:  0.902802944183  seconds, for matrix: dwt_361.
+Cov  took:  1.39899587631  seconds, for matrix: dwt_361.
+19/05/28 18:06:40 WARN org.apache.spark.mllib.linalg.distributed.RowMatrix: The input data is not directly cached, which may hurt performance if its parent RDDs are also uncached.
+19/05/28 18:06:51 WARN org.apache.spark.mllib.linalg.distributed.RowMatrix: The input data was not directly cached, which may hurt performance if its parent RDDs are also uncached.
+SVD(3)  took:  11.2677221298  seconds, for matrix: dwt_361.
+19/05/28 18:06:51 INFO org.spark_project.jetty.server.AbstractConnector: Stopped Spark@45eb6bd{HTTP/1.1,[http/1.1]}{0.0.0.0:4040}

@@ -1,0 +1,45 @@
+19/05/28 20:26:09 INFO org.spark_project.jetty.util.log: Logging initialized @7520ms
+19/05/28 20:26:10 INFO org.spark_project.jetty.server.Server: jetty-9.3.z-SNAPSHOT, build timestamp: unknown, git hash: unknown
+19/05/28 20:26:10 INFO org.spark_project.jetty.server.Server: Started @7757ms
+19/05/28 20:26:10 INFO org.spark_project.jetty.server.AbstractConnector: Started ServerConnector@5b3aa57a{HTTP/1.1,[http/1.1]}{0.0.0.0:4040}
+19/05/28 20:26:10 WARN org.apache.spark.scheduler.FairSchedulableBuilder: Fair Scheduler configuration file not found so jobs will be scheduled in FIFO order. To use fair scheduling, configure pools in fairscheduler.xml or set spark.scheduler.allocation.file to a file that contains the configuration.
+19/05/28 20:26:12 INFO org.apache.hadoop.yarn.client.RMProxy: Connecting to ResourceManager at cluster-node4-mem6-5-m/10.166.0.22:8032
+19/05/28 20:26:12 INFO org.apache.hadoop.yarn.client.AHSProxy: Connecting to Application History server at cluster-node4-mem6-5-m/10.166.0.22:10200
+19/05/28 20:26:15 WARN org.apache.hadoop.hdfs.DataStreamer: Caught exception
+java.lang.InterruptedException
+	at java.lang.Object.wait(Native Method)
+	at java.lang.Thread.join(Thread.java:1252)
+	at java.lang.Thread.join(Thread.java:1326)
+	at org.apache.hadoop.hdfs.DataStreamer.closeResponder(DataStreamer.java:980)
+	at org.apache.hadoop.hdfs.DataStreamer.endBlock(DataStreamer.java:630)
+	at org.apache.hadoop.hdfs.DataStreamer.run(DataStreamer.java:807)
+19/05/28 20:26:15 WARN org.apache.hadoop.hdfs.DataStreamer: Caught exception
+java.lang.InterruptedException
+	at java.lang.Object.wait(Native Method)
+	at java.lang.Thread.join(Thread.java:1252)
+	at java.lang.Thread.join(Thread.java:1326)
+	at org.apache.hadoop.hdfs.DataStreamer.closeResponder(DataStreamer.java:980)
+	at org.apache.hadoop.hdfs.DataStreamer.endBlock(DataStreamer.java:630)
+	at org.apache.hadoop.hdfs.DataStreamer.run(DataStreamer.java:807)
+19/05/28 20:26:15 WARN org.apache.hadoop.hdfs.DataStreamer: Caught exception
+java.lang.InterruptedException
+	at java.lang.Object.wait(Native Method)
+	at java.lang.Thread.join(Thread.java:1252)
+	at java.lang.Thread.join(Thread.java:1326)
+	at org.apache.hadoop.hdfs.DataStreamer.closeResponder(DataStreamer.java:980)
+	at org.apache.hadoop.hdfs.DataStreamer.endBlock(DataStreamer.java:630)
+	at org.apache.hadoop.hdfs.DataStreamer.run(DataStreamer.java:807)
+19/05/28 20:26:16 INFO org.apache.hadoop.yarn.client.api.impl.YarnClientImpl: Submitted application application_1559072752768_0011
+19/05/28 20:26:33 INFO com.github.fommil.jni.JniLoader: successfully loaded /tmp/jniloader5523464165293169014netlib-native_system-linux-x86_64.so
+PCA(3)  took:  9.40501403809  seconds, for matrix: rw136.
+Cov took:  0.931005001068  seconds, for matrix: rw136.
+19/05/28 20:26:35 WARN org.apache.spark.mllib.linalg.distributed.RowMatrix: The input data is not directly cached, which may hurt performance if its parent RDDs are also uncached.
+19/05/28 20:26:35 INFO com.github.fommil.jni.JniLoader: already loaded netlib-native_system-linux-x86_64.so
+19/05/28 20:26:47 WARN org.apache.spark.mllib.linalg.distributed.RowMatrix: The input data was not directly cached, which may hurt performance if its parent RDDs are also uncached.
+SVD(3) took:  13.0229570866  seconds, for matrix: rw136.
+PCA(3)  took:  0.792469024658  seconds, for matrix: dwt_361.
+Cov  took:  0.954371929169  seconds, for matrix: dwt_361.
+19/05/28 20:26:49 WARN org.apache.spark.mllib.linalg.distributed.RowMatrix: The input data is not directly cached, which may hurt performance if its parent RDDs are also uncached.
+19/05/28 20:27:00 WARN org.apache.spark.mllib.linalg.distributed.RowMatrix: The input data was not directly cached, which may hurt performance if its parent RDDs are also uncached.
+SVD(3)  took:  10.8724751472  seconds, for matrix: dwt_361.
+19/05/28 20:27:00 INFO org.spark_project.jetty.server.AbstractConnector: Stopped Spark@5b3aa57a{HTTP/1.1,[http/1.1]}{0.0.0.0:4040}

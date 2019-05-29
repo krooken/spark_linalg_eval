@@ -1,0 +1,95 @@
+19/05/28 18:08:08 INFO org.spark_project.jetty.util.log: Logging initialized @7303ms
+19/05/28 18:08:08 INFO org.spark_project.jetty.server.Server: jetty-9.3.z-SNAPSHOT, build timestamp: unknown, git hash: unknown
+19/05/28 18:08:08 INFO org.spark_project.jetty.server.Server: Started @7573ms
+19/05/28 18:08:08 INFO org.spark_project.jetty.server.AbstractConnector: Started ServerConnector@a5083d1{HTTP/1.1,[http/1.1]}{0.0.0.0:4040}
+19/05/28 18:08:09 WARN org.apache.spark.scheduler.FairSchedulableBuilder: Fair Scheduler configuration file not found so jobs will be scheduled in FIFO order. To use fair scheduling, configure pools in fairscheduler.xml or set spark.scheduler.allocation.file to a file that contains the configuration.
+19/05/28 18:08:11 INFO org.apache.hadoop.yarn.client.RMProxy: Connecting to ResourceManager at cluster-node4-mem3-75-m/10.166.0.18:8032
+19/05/28 18:08:11 INFO org.apache.hadoop.yarn.client.AHSProxy: Connecting to Application History server at cluster-node4-mem3-75-m/10.166.0.18:10200
+19/05/28 18:08:15 WARN org.apache.hadoop.hdfs.DataStreamer: Caught exception
+java.lang.InterruptedException
+	at java.lang.Object.wait(Native Method)
+	at java.lang.Thread.join(Thread.java:1252)
+	at java.lang.Thread.join(Thread.java:1326)
+	at org.apache.hadoop.hdfs.DataStreamer.closeResponder(DataStreamer.java:980)
+	at org.apache.hadoop.hdfs.DataStreamer.endBlock(DataStreamer.java:630)
+	at org.apache.hadoop.hdfs.DataStreamer.run(DataStreamer.java:807)
+19/05/28 18:08:15 WARN org.apache.hadoop.hdfs.DataStreamer: Caught exception
+java.lang.InterruptedException
+	at java.lang.Object.wait(Native Method)
+	at java.lang.Thread.join(Thread.java:1252)
+	at java.lang.Thread.join(Thread.java:1326)
+	at org.apache.hadoop.hdfs.DataStreamer.closeResponder(DataStreamer.java:980)
+	at org.apache.hadoop.hdfs.DataStreamer.endBlock(DataStreamer.java:630)
+	at org.apache.hadoop.hdfs.DataStreamer.run(DataStreamer.java:807)
+19/05/28 18:08:15 WARN org.apache.hadoop.hdfs.DataStreamer: Caught exception
+java.lang.InterruptedException
+	at java.lang.Object.wait(Native Method)
+	at java.lang.Thread.join(Thread.java:1252)
+	at java.lang.Thread.join(Thread.java:1326)
+	at org.apache.hadoop.hdfs.DataStreamer.closeResponder(DataStreamer.java:980)
+	at org.apache.hadoop.hdfs.DataStreamer.endBlock(DataStreamer.java:630)
+	at org.apache.hadoop.hdfs.DataStreamer.run(DataStreamer.java:807)
+19/05/28 18:08:16 INFO org.apache.hadoop.yarn.client.api.impl.YarnClientImpl: Submitted application application_1559057102467_0005
+19/05/28 18:08:33 INFO com.github.fommil.jni.JniLoader: successfully loaded /tmp/jniloader8320231436734804485netlib-native_system-linux-x86_64.so
+PCA(3)  took:  9.13486194611  seconds, for matrix: rw136.
+Cov took:  0.84530210495  seconds, for matrix: rw136.
+19/05/28 18:08:34 WARN org.apache.spark.mllib.linalg.distributed.RowMatrix: The input data is not directly cached, which may hurt performance if its parent RDDs are also uncached.
+19/05/28 18:08:34 INFO com.github.fommil.jni.JniLoader: already loaded netlib-native_system-linux-x86_64.so
+19/05/28 18:08:44 WARN org.apache.spark.util.AccumulatorContext: Attempted to access garbage collected accumulator 1401
+19/05/28 18:08:44 WARN org.apache.spark.util.AccumulatorContext: Attempted to access garbage collected accumulator 1401
+19/05/28 18:08:44 WARN org.apache.spark.util.AccumulatorContext: Attempted to access garbage collected accumulator 1402
+19/05/28 18:08:44 WARN org.apache.spark.util.AccumulatorContext: Attempted to access garbage collected accumulator 1402
+19/05/28 18:08:44 WARN org.apache.spark.util.AccumulatorContext: Attempted to access garbage collected accumulator 1403
+19/05/28 18:08:44 WARN org.apache.spark.util.AccumulatorContext: Attempted to access garbage collected accumulator 1403
+19/05/28 18:08:44 WARN org.apache.spark.util.AccumulatorContext: Attempted to access garbage collected accumulator 1404
+19/05/28 18:08:44 WARN org.apache.spark.util.AccumulatorContext: Attempted to access garbage collected accumulator 1404
+19/05/28 18:08:44 WARN org.apache.spark.util.AccumulatorContext: Attempted to access garbage collected accumulator 1405
+19/05/28 18:08:44 WARN org.apache.spark.util.AccumulatorContext: Attempted to access garbage collected accumulator 1405
+19/05/28 18:08:44 WARN org.apache.spark.util.AccumulatorContext: Attempted to access garbage collected accumulator 1406
+19/05/28 18:08:44 WARN org.apache.spark.util.AccumulatorContext: Attempted to access garbage collected accumulator 1406
+19/05/28 18:08:44 WARN org.apache.spark.util.AccumulatorContext: Attempted to access garbage collected accumulator 1407
+19/05/28 18:08:44 WARN org.apache.spark.util.AccumulatorContext: Attempted to access garbage collected accumulator 1407
+19/05/28 18:08:44 WARN org.apache.spark.util.AccumulatorContext: Attempted to access garbage collected accumulator 1408
+19/05/28 18:08:44 WARN org.apache.spark.util.AccumulatorContext: Attempted to access garbage collected accumulator 1408
+19/05/28 18:08:44 WARN org.apache.spark.util.AccumulatorContext: Attempted to access garbage collected accumulator 1409
+19/05/28 18:08:44 WARN org.apache.spark.util.AccumulatorContext: Attempted to access garbage collected accumulator 1409
+19/05/28 18:08:44 WARN org.apache.spark.util.AccumulatorContext: Attempted to access garbage collected accumulator 1410
+19/05/28 18:08:44 WARN org.apache.spark.util.AccumulatorContext: Attempted to access garbage collected accumulator 1410
+19/05/28 18:08:44 WARN org.apache.spark.util.AccumulatorContext: Attempted to access garbage collected accumulator 1411
+19/05/28 18:08:44 WARN org.apache.spark.util.AccumulatorContext: Attempted to access garbage collected accumulator 1411
+19/05/28 18:08:44 WARN org.apache.spark.util.AccumulatorContext: Attempted to access garbage collected accumulator 1412
+19/05/28 18:08:44 WARN org.apache.spark.util.AccumulatorContext: Attempted to access garbage collected accumulator 1412
+19/05/28 18:08:44 WARN org.apache.spark.util.AccumulatorContext: Attempted to access garbage collected accumulator 1413
+19/05/28 18:08:44 WARN org.apache.spark.util.AccumulatorContext: Attempted to access garbage collected accumulator 1413
+19/05/28 18:08:44 WARN org.apache.spark.util.AccumulatorContext: Attempted to access garbage collected accumulator 1414
+19/05/28 18:08:44 WARN org.apache.spark.util.AccumulatorContext: Attempted to access garbage collected accumulator 1414
+19/05/28 18:08:44 WARN org.apache.spark.util.AccumulatorContext: Attempted to access garbage collected accumulator 1415
+19/05/28 18:08:44 WARN org.apache.spark.util.AccumulatorContext: Attempted to access garbage collected accumulator 1415
+19/05/28 18:08:44 WARN org.apache.spark.util.AccumulatorContext: Attempted to access garbage collected accumulator 1416
+19/05/28 18:08:44 WARN org.apache.spark.util.AccumulatorContext: Attempted to access garbage collected accumulator 1416
+19/05/28 18:08:44 WARN org.apache.spark.util.AccumulatorContext: Attempted to access garbage collected accumulator 1417
+19/05/28 18:08:44 WARN org.apache.spark.util.AccumulatorContext: Attempted to access garbage collected accumulator 1417
+19/05/28 18:08:44 WARN org.apache.spark.util.AccumulatorContext: Attempted to access garbage collected accumulator 1418
+19/05/28 18:08:44 WARN org.apache.spark.util.AccumulatorContext: Attempted to access garbage collected accumulator 1418
+19/05/28 18:08:44 WARN org.apache.spark.util.AccumulatorContext: Attempted to access garbage collected accumulator 1419
+19/05/28 18:08:44 WARN org.apache.spark.util.AccumulatorContext: Attempted to access garbage collected accumulator 1419
+19/05/28 18:08:44 WARN org.apache.spark.util.AccumulatorContext: Attempted to access garbage collected accumulator 1420
+19/05/28 18:08:44 WARN org.apache.spark.util.AccumulatorContext: Attempted to access garbage collected accumulator 1420
+19/05/28 18:08:44 WARN org.apache.spark.util.AccumulatorContext: Attempted to access garbage collected accumulator 1421
+19/05/28 18:08:44 WARN org.apache.spark.util.AccumulatorContext: Attempted to access garbage collected accumulator 1421
+19/05/28 18:08:44 WARN org.apache.spark.util.AccumulatorContext: Attempted to access garbage collected accumulator 1422
+19/05/28 18:08:44 WARN org.apache.spark.util.AccumulatorContext: Attempted to access garbage collected accumulator 1422
+19/05/28 18:08:44 WARN org.apache.spark.util.AccumulatorContext: Attempted to access garbage collected accumulator 1423
+19/05/28 18:08:44 WARN org.apache.spark.util.AccumulatorContext: Attempted to access garbage collected accumulator 1423
+19/05/28 18:08:44 WARN org.apache.spark.util.AccumulatorContext: Attempted to access garbage collected accumulator 1424
+19/05/28 18:08:44 WARN org.apache.spark.util.AccumulatorContext: Attempted to access garbage collected accumulator 1424
+19/05/28 18:08:44 WARN org.apache.spark.util.AccumulatorContext: Attempted to access garbage collected accumulator 1425
+19/05/28 18:08:44 WARN org.apache.spark.util.AccumulatorContext: Attempted to access garbage collected accumulator 1425
+19/05/28 18:08:47 WARN org.apache.spark.mllib.linalg.distributed.RowMatrix: The input data was not directly cached, which may hurt performance if its parent RDDs are also uncached.
+SVD(3) took:  12.8245060444  seconds, for matrix: rw136.
+PCA(3)  took:  0.760432958603  seconds, for matrix: dwt_361.
+Cov  took:  1.03770017624  seconds, for matrix: dwt_361.
+19/05/28 18:08:49 WARN org.apache.spark.mllib.linalg.distributed.RowMatrix: The input data is not directly cached, which may hurt performance if its parent RDDs are also uncached.
+19/05/28 18:09:00 WARN org.apache.spark.mllib.linalg.distributed.RowMatrix: The input data was not directly cached, which may hurt performance if its parent RDDs are also uncached.
+SVD(3)  took:  11.3680000305  seconds, for matrix: dwt_361.
+19/05/28 18:09:00 INFO org.spark_project.jetty.server.AbstractConnector: Stopped Spark@a5083d1{HTTP/1.1,[http/1.1]}{0.0.0.0:4040}
