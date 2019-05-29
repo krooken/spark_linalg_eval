@@ -1,4 +1,4 @@
-folder = '.';
+[folder, ~, ~] = fileparts(mfilename('fullpath'));
 
 folder_data = dir(folder);
 cluster_data = struct();
