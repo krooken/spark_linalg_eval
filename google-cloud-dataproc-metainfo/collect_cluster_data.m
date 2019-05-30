@@ -105,6 +105,15 @@ latexstrings = '';
 for i = 1:numel(datafields)
     avg_data.(datafields{i}) = mean(collected_data.(datafields{i}));
     median_data.(datafields{i}) = median(collected_data.(datafields{i}));
+    fh = figure;
+    boxplot(collected_data.(datafields{i}))
+    fh.NumberTitle = 'off';
+    fh.Name = datafields{i};
+    ah = gca;
+    ah.YLabel.String = 'Execution time [s]';
+    ah.XTickLabel = {'1 master', '2 nodes', '3 nodes'};
+    ah.YLim(1) = 0;
+    print(fh, datafields{i}, '-depsc','-tiff');
     latexstring = '';
     for j = 1:length(avg_data.(datafields{i}))
         latexstring = [latexstring ' & ' sprintf('%.2f',avg_data.(datafields{i})(j))]; %#ok<AGROW>
