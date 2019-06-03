@@ -14,11 +14,11 @@ Please follow the data science process, and comment on how you have followed it.
 
 ## Experiment setup
 
-Try with two different matrices, 1 with 130 rows and 1 wioth 300 rows.
+Try with two different matrices, 1 with 130 rows and 1 with 300 rows.
 
 Experiments (low memory, 3.75 GB):
 
-| Cluster setup           |  1 node (1,0) | 3 nodes (1,2) | 5 nodes (1,4) |
+| Cluster setup           |  1 node (1,0) | 3 nodes (1,2) | 5 nodes (1,3) |
 |----------------|---------------|---------------|---------------|
 | PCA            |               |               |               |
 | Covariance     |               |               |               |
@@ -26,7 +26,7 @@ Experiments (low memory, 3.75 GB):
 
 Experiments (high memory, 8 GB):
 
-| Cluster setup               |  1 node (1,0) | 3 nodes (1,2) | 5 nodes (1,4) |
+| Cluster setup               |  1 node (1,0) | 3 nodes (1,2) | 5 nodes (1,3) |
 |----------------|---------------|---------------|---------------|
 | PCA            |               |               |               |
 | Covariance     |               |               |               |
