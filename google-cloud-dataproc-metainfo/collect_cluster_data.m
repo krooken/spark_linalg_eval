@@ -114,6 +114,7 @@ for i = 1:numel(datafields)
     ah.XTickLabel = {'1 master', '2 nodes', '3 nodes'};
     ah.YLim(1) = 0;
     print(fh, datafields{i}, '-depsc','-tiff');
+    print(fh, datafields{i}, '-dpng');
     latexstring = '';
     for j = 1:length(avg_data.(datafields{i}))
         latexstring = [latexstring ' & ' sprintf('%.2f',avg_data.(datafields{i})(j))]; %#ok<AGROW>
