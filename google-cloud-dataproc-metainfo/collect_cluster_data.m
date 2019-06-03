@@ -121,3 +121,58 @@ for i = 1:numel(datafields)
     end
     latexstrings = [latexstrings sprintf(['\n\r' datafields{i} ' ' latexstring])]; %#ok<AGROW>
 end
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%
+
+low_mem1 = collected_data.PCA_low_mem_rw136(:,1)/avg_data.PCA_low_mem_rw136(1);
+high_mem1 = collected_data.PCA_high_mem_rw136(:,1)/avg_data.PCA_low_mem_rw136(1);
+low_mem2 = collected_data.PCA_low_mem_rw136(:,2)/avg_data.PCA_low_mem_rw136(2);
+high_mem2 = collected_data.PCA_high_mem_rw136(:,2)/avg_data.PCA_low_mem_rw136(2);
+low_mem3 = collected_data.PCA_low_mem_rw136(:,3)/avg_data.PCA_low_mem_rw136(3);
+high_mem3 = collected_data.PCA_high_mem_rw136(:,3)/avg_data.PCA_low_mem_rw136(3);
+fh = figure;
+boxplot([low_mem1 high_mem1; low_mem2 high_mem2; low_mem3 high_mem3]);
+xlabel('RAM')
+ylabel('Normalized execution time')
+xticklabels({'3.75 GB', '6.5 GB'})
+ylimits = ylim;
+ylimits(1) = 0;
+ylim(ylimits);
+print(fh, 'PCA_mem', '-depsc')
+print(fh, 'PCA_mem', '-dpng')
+
+low_mem1 = collected_data.Cov_low_mem_rw136(:,1)/avg_data.Cov_low_mem_rw136(1);
+high_mem1 = collected_data.Cov_high_mem_rw136(:,1)/avg_data.Cov_low_mem_rw136(1);
+low_mem2 = collected_data.Cov_low_mem_rw136(:,2)/avg_data.Cov_low_mem_rw136(2);
+high_mem2 = collected_data.Cov_high_mem_rw136(:,2)/avg_data.Cov_low_mem_rw136(2);
+low_mem3 = collected_data.Cov_low_mem_rw136(:,3)/avg_data.Cov_low_mem_rw136(3);
+high_mem3 = collected_data.Cov_high_mem_rw136(:,3)/avg_data.Cov_low_mem_rw136(3);
+fh = figure;
+boxplot([low_mem1 high_mem1; low_mem2 high_mem2; low_mem3 high_mem3]);
+xlabel('RAM')
+ylabel('Normalized execution time')
+xticklabels({'3.75 GB', '6.5 GB'})
+ylimits = ylim;
+ylimits(1) = 0;
+ylim(ylimits);
+print(fh, 'Cov_mem', '-depsc')
+print(fh, 'Cov_mem', '-dpng')
+
+low_mem1 = collected_data.SVD_low_mem_rw136(:,1)/avg_data.SVD_low_mem_rw136(1);
+high_mem1 = collected_data.SVD_high_mem_rw136(:,1)/avg_data.SVD_low_mem_rw136(1);
+low_mem2 = collected_data.SVD_low_mem_rw136(:,2)/avg_data.SVD_low_mem_rw136(2);
+high_mem2 = collected_data.SVD_high_mem_rw136(:,2)/avg_data.SVD_low_mem_rw136(2);
+low_mem3 = collected_data.SVD_low_mem_rw136(:,3)/avg_data.SVD_low_mem_rw136(3);
+high_mem3 = collected_data.SVD_high_mem_rw136(:,3)/avg_data.SVD_low_mem_rw136(3);
+fh = figure;
+boxplot([low_mem1 high_mem1; low_mem2 high_mem2; low_mem3 high_mem3]);
+xlabel('RAM')
+ylabel('Normalized execution time')
+xticklabels({'3.75 GB', '6.5 GB'})
+ylimits = ylim;
+ylimits(1) = 0;
+ylim(ylimits);
+print(fh, 'SVD_mem', '-depsc')
+print(fh, 'SVD_mem', '-dpng')
